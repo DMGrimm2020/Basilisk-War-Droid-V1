@@ -55,6 +55,7 @@
             <ComfyTemperatureMin>-250</ComfyTemperatureMin>
             <ComfyTemperatureMax>250</ComfyTemperatureMax>
             <MeatAmount>0</MeatAmount>
+            <LeatherAmount>0</LeatherAmount>
         </statBases>
         <tools>
             <li>
@@ -83,7 +84,7 @@
                 </capacities>
                 <power>20</power>
                 <cooldownTime>1.7</cooldownTime>
-               <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+                <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
@@ -107,7 +108,7 @@
         <race>
             <thinkTreeMain>Animal</thinkTreeMain>
             <thinkTreeConstant>AnimalConstant</thinkTreeConstant>
-            <intelligence>ToolUser</intelligence>
+            <intelligence>ToolUser,Animal</intelligence>
             <makesFootprints>true</makesFootprints>
             <fleshType>Mechanoid</fleshType>
             <needsRest>false</needsRest>
@@ -153,6 +154,13 @@
                 <li>OrganicStandard</li>
             </hediffGiverSets>
         </race> 
+        <recipes>
+			<li>ExciseCarcinoma</li>
+            <li>AdministerMechSerumHealer</li>
+            <li>RemoveBodyPart</li>
+            <li>Euthanize</li>
+            <li>Anesthetize</li>
+        </recipes>
         <tradeTags>
             <li>AnimalCommon</li>
         </tradeTags> 
