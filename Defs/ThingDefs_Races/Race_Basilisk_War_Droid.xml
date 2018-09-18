@@ -42,8 +42,8 @@
 
     <ThingDef ParentName="Base Basilisk War Droid">
         <defName>BasiliskWarDroidGreen</defName>
-        <label>basilisk</label>
-        <description>?</description>
+        <label>green basilisk</label>
+        <description>green basilisk</description>
         <statBases>
             <MarketValue>45000</MarketValue>
             <MoveSpeed>3</MoveSpeed>
@@ -61,12 +61,11 @@
             <li>
                 <label>left blade</label>
                 <capacities>
-                    <li>Cut</li>
-                    <li>Stab</li>
+                    <li>Scratch</li>
                 </capacities>
                 <power>20</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
@@ -79,12 +78,11 @@
             <li>
                 <label>right blade</label>
                 <capacities>
-                    <li>Cut</li>
-                    <li>Stab</li>
+                    <li>Scratch</li>
                 </capacities>
                 <power>20</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
@@ -116,24 +114,23 @@
             <foodType>None</foodType>
             <wildness>0.7</wildness>
             <trainability>Advanced</trainability>
-            <manhunterOnTameFailChance>0.05</manhunterOnTameFailChance>
+            <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
             <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
             <lifeExpectancy>1000</lifeExpectancy>
             <nameCategory>HumanStandard</nameCategory>
-            <body>Scyther</body>
+            <body>DroidAnimalWith6LegsAndTail</body>
             <baseBodySize>2</baseBodySize>
             <baseHealthScale>4.5</baseHealthScale>
-            <gestationPeriodDays>45</gestationPeriodDays>
             <wildBiomes>
 		        <AridShrubland>0.1</AridShrubland>
 		        <TemperateForest>0.1</TemperateForest>
 		        <TropicalRainforest>0.1</TropicalRainforest>
-		        <IceSheet>0</IceSheet>
+		        <IceSheet>0.1</IceSheet>
 		        <BorealForest>0.1</BorealForest>
-		        <Tundra>0.03</Tundra>
-		        <Desert>0.03</Desert>
+		        <Tundra>0.1</Tundra>
+		        <Desert>0.1</Desert>
 	        </wildBiomes>
-	        <nuzzleMtbHours>275</nuzzleMtbHours>
+	        <nuzzleMtbHours>24</nuzzleMtbHours>
             <lifeStageAges>
                 <li>
                     <def>MechanoidFullyFormed</def>
@@ -153,8 +150,16 @@
             <hediffGiverSets>
                 <li>OrganicStandard</li>
             </hediffGiverSets>
-        </race> 
+        </race>  
         <recipes>
+            <li>InstallArtificialBrain</li>
+            <li>InstallReactor</li>
+            <li>InstallFluidReprocessor</li>
+            <li>InstallTail</li>
+            <li>InstallSightSensor</li>
+            <li>InstallHearingSensor</li>
+            <li>InstallMechLeg</li>
+            <li>InstallPowerClaw</li>
 			<li>ExciseCarcinoma</li>
             <li>AdministerMechSerumHealer</li>
             <li>RemoveBodyPart</li>
@@ -168,7 +173,7 @@
 
     <PawnKindDef ParentName="Base Basilisk War Droid kind">
         <defName>BasiliskWarDroidGreen</defName>
-        <label>basilisk</label>
+        <label>green basilisk</label>
         <race>BasiliskWarDroidGreen</race>
         <combatPower>400</combatPower>
         <ecoSystemWeight>1.1</ecoSystemWeight>
@@ -200,8 +205,8 @@
 
     <ThingDef ParentName="Base Basilisk War Droid">
         <defName>BasiliskWarDroidRed</defName>
-        <label>basilisk</label>
-        <description>?</description>
+        <label>red basilisk</label>
+        <description>red basilisk</description>
         <statBases>
             <MarketValue>70000</MarketValue>
             <MoveSpeed>4</MoveSpeed>
@@ -218,12 +223,11 @@
             <li>
                 <label>left blade</label>
                 <capacities>
-                    <li>Cut</li>
-                    <li>Stab</li>
+                    <li>Scratch</li>
                 </capacities>
                 <power>30</power>
-                <cooldownTime>1.7</cooldownTime>
-                <linkedBodyPartsGroup>LeftBlade</linkedBodyPartsGroup>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>FrontLeftPaw</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
@@ -236,12 +240,11 @@
             <li>
                 <label>right blade</label>
                 <capacities>
-                    <li>Cut</li>
-                    <li>Stab</li>
+                    <li>Scratch</li>
                 </capacities>
                 <power>30</power>
-                <cooldownTime>1.7</cooldownTime>
-               <linkedBodyPartsGroup>RightBlade</linkedBodyPartsGroup>
+                <cooldownTime>2</cooldownTime>
+               <linkedBodyPartsGroup>FrontRightPaw</linkedBodyPartsGroup>
                 <surpriseAttack>
                     <extraMeleeDamages>
                         <li>
@@ -277,10 +280,9 @@
             <manhunterOnDamageChance>0.35</manhunterOnDamageChance>
             <lifeExpectancy>1000</lifeExpectancy>
             <nameCategory>HumanStandard</nameCategory>
-            <body>Scyther</body>
+            <body>DroidAnimalWith6LegsAndTail</body>
             <baseBodySize>4</baseBodySize>
             <baseHealthScale>6</baseHealthScale>
-            <gestationPeriodDays>45</gestationPeriodDays>
             <wildBiomes>
 		        <AridShrubland>0.1</AridShrubland>
 		        <TemperateForest>0.1</TemperateForest>
@@ -290,7 +292,7 @@
 		        <Tundra>0.03</Tundra>
 		        <Desert>0.03</Desert>
 	        </wildBiomes>
-	        <nuzzleMtbHours>275</nuzzleMtbHours>
+	        <nuzzleMtbHours>24</nuzzleMtbHours>
             <lifeStageAges>
                 <li>
                     <def>MechanoidFullyFormed</def>
@@ -311,6 +313,21 @@
                 <li>OrganicStandard</li>
             </hediffGiverSets>
         </race> 
+        <recipes>
+            <li>InstallArtificialBrain</li>
+            <li>InstallReactor</li>
+            <li>InstallFluidReprocessor</li>
+            <li>InstallTail</li>
+            <li>InstallSightSensor</li>
+            <li>InstallHearingSensor</li>
+            <li>InstallMechLeg</li>
+            <li>InstallPowerClaw</li>
+			<li>ExciseCarcinoma</li>
+            <li>AdministerMechSerumHealer</li>
+            <li>RemoveBodyPart</li>
+            <li>Euthanize</li>
+            <li>Anesthetize</li>
+        </recipes>
         <tradeTags>
             <li>AnimalCommon</li>
         </tradeTags> 
@@ -318,7 +335,7 @@
 
     <PawnKindDef ParentName="Base Basilisk War Droid kind">
         <defName>BasiliskWarDroidRed</defName>
-        <label>basilisk</label>
+        <label>red basilisk</label>
         <race>BasiliskWarDroidRed</race>
         <combatPower>600</combatPower>
         <ecoSystemWeight>1.1</ecoSystemWeight>

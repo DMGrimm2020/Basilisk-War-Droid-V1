@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--===================== Mechs =====================-->
+  
+    <BodyPartDef Name="MechLegBase" Abstract="True">
+        <hitPoints>7</hitPoints>
+        <solid>true</solid>
+        <alive>false</alive>
+        <bleedRate>0</bleedRate>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <frostbiteVulnerability>10</frostbiteVulnerability>
+        <pawnGeneratorCanAmputate>true</pawnGeneratorCanAmputate>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="MechLegBase">
+        <defName>MechLeg</defName>
+        <label>mech leg</label>
+        <labelShort>mech leg</labelShort>
+        <tags>
+            <li>MovingLimbCore</li>
+        </tags>
+    </BodyPartDef>
+
+    <BodyPartDef ParentName="ClawBase">
+        <defName>MiddleClaw</defName>
+        <label>middle claw</label>
+        <labelShort>claw</labelShort>
+        <tags>
+            <li>MovingLimbDigit</li>
+        </tags>
+    </BodyPartDef>
+
+</Defs>

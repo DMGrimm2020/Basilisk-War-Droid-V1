@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <ThingDef Name="BodyPartMechBase" ParentName="BodyPartProstheticBase" Abstract="True">
+        <graphicData>
+            <texPath>Things/Item/Health/TGHealthItemMech</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.80</drawSize>
+        </graphicData>
+        <recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <researchPrerequisite>Bionics</researchPrerequisite>
+            <recipeUsers Inherit="False">
+                <li>FabricationBench</li>
+            </recipeUsers>
+        </recipeMaker>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>ArtificialBrain</defName>
+        <label>artificial brain</label>
+        <description>An advanced mech brain.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>Reactor</defName>
+        <label>reactor</label>
+        <description>An advanced mech heart.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>FluidReprocessor</defName>
+        <label>fluid reprocessor</label>
+        <description>An advanced mech kidney.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>SightSensor</defName>
+        <label>sight sensor</label>
+        <description>An advanced mech sight sensor.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>HearingSensor</defName>
+        <label>hearing sensor</label>
+        <description>An advanced mech hearing sensor.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>HearingSensor</defName>
+        <label>hearing sensor</label>
+        <description>An advanced mech hearing sensor.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="BodyPartMechBase">
+        <defName>MechLeg</defName>
+        <label>mech leg</label>
+        <description>An advanced mech mech leg.</description>
+        <techLevel>Spacer</techLevel>
+        <costList>
+            <Plasteel>15</Plasteel>
+            <ComponentSpacer>3</ComponentSpacer>
+        </costList>
+        <statBases>
+            <WorkToMake>26000</WorkToMake>
+            <Mass>1</Mass>
+        </statBases>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+    </ThingDef>
+  
+</Defs>
